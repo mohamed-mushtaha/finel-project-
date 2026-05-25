@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customer_nav_graph"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.ExploreFragment"
+        android:label="Explore">
+        <action
+            android:id="@+id/action_explore_to_propertyDetail"
+            app:destination="@id/propertyDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.SearchFragment"
+        android:label="Search">
+        <action
+            android:id="@+id/action_search_to_propertyDetail"
+            app:destination="@id/propertyDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_search_to_roomDetail"
+            app:destination="@id/roomDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingsFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.BookingsFragment"
+        android:label="Bookings" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_edit_profile"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.EditProfileFragment"
+        android:label="Edit Profile" />
+
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.PropertyDetailFragment"
+        android:label="Property Detail">
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_propertyDetail_to_roomDetail"
+            app:destination="@id/roomDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_propertyDetail_to_map"
+            app:destination="@id/propertyMapFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/roomDetailFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.RoomDetailFragment"
+        android:label="Room Detail">
+        <argument
+            android:name="roomId"
+            app:argType="string" />
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_roomDetail_to_bookingConfirm"
+            app:destination="@id/bookingConfirmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingConfirmFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.BookingConfirmFragment"
+        android:label="Confirm Booking">
+        <argument
+            android:name="roomId"
+            app:argType="string" />
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/propertyMapFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.PropertyMapFragment"
+        android:label="Map">
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

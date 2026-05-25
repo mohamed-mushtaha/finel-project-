@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand palette: emerald + sand -->
+    <color name="emerald_50">#E6F4EE</color>
+    <color name="emerald_100">#C4E5D4</color>
+    <color name="emerald_300">#5BB58A</color>
+    <color name="emerald_500">#0B6E4F</color>
+    <color name="emerald_600">#096040</color>
+    <color name="emerald_700">#075238</color>
+    <color name="emerald_800">#054529</color>
+    <color name="emerald_900">#03301F</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="sand_50">#FBF6EE</color>
+    <color name="sand_200">#EEDFC1</color>
+    <color name="sand_400">#D9B97A</color>
+
+    <color name="coral_100">#FDE5DF</color>
+    <color name="coral_400">#EF6F5C</color>
+    <color name="coral_600">#C0432F</color>
+    <color name="coral_700">#A0321F</color>
+
+    <color name="slate_50">#F7F8FA</color>
+    <color name="slate_100">#EEF1F4</color>
+    <color name="slate_200">#D9DFE6</color>
+    <color name="slate_400">#8993A4</color>
+    <color name="slate_700">#3B4654</color>
+    <color name="slate_900">#101418</color>
+
+    <color name="surface_dark">#14181C</color>
+    <color name="surface_dark_elevated">#1B2127</color>
+
+    <!-- Launcher icon bg -->
+    <color name="ic_launcher_background">#0B6E4F</color>
+    <color name="splash_bg">#0B6E4F</color>
+</resources>

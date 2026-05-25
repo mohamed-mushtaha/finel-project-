@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <!-- ─── Splash ─────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.hotel.hotelbooking.ui.splash.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+        <action android:id="@+id/action_splash_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment" app:popUpToInclusive="true" />
+        <action android:id="@+id/action_splash_to_customer"
+            app:destination="@id/customerContainerFragment"
+            app:popUpTo="@id/splashFragment" app:popUpToInclusive="true" />
+        <action android:id="@+id/action_splash_to_admin"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/splashFragment" app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- ─── Auth ────────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.hotel.hotelbooking.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action android:id="@+id/action_login_to_signup"
+            app:destination="@id/signupFragment" />
+        <action android:id="@+id/action_login_to_forgot"
+            app:destination="@id/forgotPasswordFragment" />
+        <action android:id="@+id/action_login_to_customer"
+            app:destination="@id/customerContainerFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+        <action android:id="@+id/action_login_to_admin"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.hotel.hotelbooking.ui.auth.SignupFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup">
+        <action android:id="@+id/action_signup_to_customer"
+            app:destination="@id/customerContainerFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+        <action android:id="@+id/action_signup_to_admin"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.hotel.hotelbooking.ui.auth.ForgotPasswordFragment"
+        android:label="Forgot Password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <!-- ─── Profile (shared by both roles) ──────────────────────────── -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action android:id="@+id/action_profile_to_edit_profile"
+            app:destination="@id/editProfileFragment" />
+        <action android:id="@+id/action_profile_to_login"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph" app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <!-- ─── Customer ─────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/customerContainerFragment"
+        android:name="com.hotel.hotelbooking.ui.customer.CustomerContainerFragment"
+        android:label="Home" />
+
+    <!-- ─── Admin ────────────────────────────────────────────────────── -->
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.AdminContainerFragment"
+        android:label="Admin" />
+
+</navigation>

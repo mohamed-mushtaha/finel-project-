@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Stayly</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_subtitle">Sign in to continue browsing stays</string>
+    <string name="create_account">Create your account</string>
+    <string name="sign_up_subtitle">Just a few details to get started</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_full_name">Full name</string>
+    <string name="label_phone">Phone</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_sign_up">Create account</string>
+    <string name="link_go_signup">Don\'t have an account? Sign up</string>
+    <string name="link_go_login">Already have an account? Sign in</string>
+    <string name="role_customer">Customer</string>
+    <string name="role_owner">Property owner</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="forgot_password_title">Reset password</string>
+    <string name="forgot_password_subtitle">Enter your email and we\'ll send a reset link</string>
+    <string name="btn_send_reset">Send reset link</string>
+    <string name="reset_sent_title">Check your inbox</string>
+    <string name="reset_sent_message">A password reset link has been sent to %1$s</string>
+    <string name="btn_back_to_login">Back to sign in</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="label_role">Role</string>
+    <string name="label_member_since">Member since</string>
+    <string name="btn_save">Save changes</string>
+    <string name="btn_change_photo">Change photo</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="role_display_customer">Customer</string>
+    <string name="role_display_admin">Property owner</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_properties">Properties</string>
+    <string name="nav_rooms">Rooms</string>
+
+    <!-- Explore -->
+    <string name="explore_title">Explore</string>
+    <string name="filter_all">All</string>
+    <string name="filter_hotels">Hotels</string>
+    <string name="filter_apartments">Apartments</string>
+    <string name="no_properties_found">No properties found</string>
+    <string name="nav_explore">Explore</string>
+    <string name="type_hotel">Hotel</string>
+    <string name="type_apartment">Apartment</string>
+
+    <!-- Search -->
+    <string name="search_title">Search</string>
+    <string name="search_hint">Hotels, apartments, location…</string>
+    <string name="search_empty_hint">Start typing to find properties</string>
+    <string name="search_no_results">No results for \"%1$s\"</string>
+    <string name="rating_any">Any rating</string>
+    <string name="rating_3plus">3★+</string>
+    <string name="rating_4plus">4★+</string>
+    <string name="rating_5">5★ only</string>
+    <string name="min_price">Min price</string>
+    <string name="max_price">Max price</string>
+
+    <!-- Property / Room detail -->
+    <string name="available_rooms">Available Rooms</string>
+    <string name="no_rooms_available">No rooms available right now</string>
+    <string name="rating_display">%.1f / 5.0</string>
+    <string name="per_night">per night</string>
+    <string name="price_per_night">$%.0f/night</string>
+    <string name="price_value">$%.0f</string>
+    <string name="description_label">Description</string>
+    <string name="amenities_label">Amenities</string>
+    <string name="room_available">Available</string>
+    <string name="room_unavailable">Unavailable</string>
+    <string name="book_now">Book Now</string>
+
+    <!-- Bookings -->
+    <string name="bookings_coming_soon">Booking history coming soon</string>
+    <string name="bookings_coming_soon_sub">Your confirmed reservations will appear here</string>
+    <string name="no_bookings">No bookings yet</string>
+    <string name="no_bookings_sub">Your confirmed reservations will appear here</string>
+    <string name="booking_dates_nights">%1$s – %2$s (%3$d nights)</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_completed">Completed</string>
+    <string name="total">Total</string>
+
+    <!-- Booking confirm -->
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="select_dates">Select Dates</string>
+    <string name="check_in">Check-in</string>
+    <string name="check_out">Check-out</string>
+    <string name="tap_to_select">Tap to select</string>
+    <string name="pick_dates">Pick dates</string>
+    <string name="guests_label">Guests</string>
+    <string name="price_summary">Price Summary</string>
+    <string name="price_nights_label">%1$s × %2$d nights</string>
+    <string name="booking_success">Booking confirmed! See you there.</string>
+
+    <!-- Map -->
+    <string name="map_directions">Directions</string>
+    <string name="open_in_maps">Open in Maps</string>
+    <string name="view_on_map">View on Map</string>
+
+    <!-- Admin -->
+    <string name="admin_properties_title">My Properties</string>
+    <string name="add_property">Add Property</string>
+    <string name="edit_property">Edit Property</string>
+    <string name="delete_property">Delete Property</string>
+    <string name="delete_property_confirm">This will permanently delete the property and all its data.</string>
+    <string name="no_properties_admin">No properties yet</string>
+    <string name="no_properties_admin_sub">Tap + to add your first hotel or apartment</string>
+    <string name="property_saved">Property saved successfully</string>
+    <string name="property_type_label">Property Type</string>
+    <string name="property_name_hint">Property name</string>
+    <string name="property_address_hint">Full address</string>
+    <string name="latitude_hint">Latitude</string>
+    <string name="longitude_hint">Longitude</string>
+    <string name="description_hint">Description (optional)</string>
+    <string name="add_room">Add Room</string>
+    <string name="edit_room">Edit Room</string>
+    <string name="delete_room">Delete Room</string>
+    <string name="delete_room_confirm">Delete \"%1$s\"?</string>
+    <string name="no_rooms_tap_add">No rooms yet — tap + to add one</string>
+    <string name="rooms_section">Rooms</string>
+    <string name="room_saved">Room saved successfully</string>
+    <string name="room_name_hint">Room name</string>
+    <string name="price_per_night_hint">Price per night</string>
+    <string name="capacity_hint">Max guests</string>
+    <string name="amenities_hint">Amenities</string>
+    <string name="amenities_helper">Comma-separated (e.g. WiFi, Pool, Gym)</string>
+    <string name="room_available_label">Available for booking</string>
+    <string name="delete">Delete</string>
+
+    <!-- Dashboard -->
+    <string name="stat_properties">Properties</string>
+    <string name="stat_bookings">Bookings</string>
+    <string name="top_rated_properties">Top Rated Properties</string>
+    <string name="most_requested_rooms">Most Booked Rooms</string>
+
+    <!-- Generic -->
+    <string name="loading">Loading…</string>
+    <string name="retry">Retry</string>
+    <string name="sign_out">Sign out</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_results">No results found</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>

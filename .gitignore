@@ -1,32 +1,58 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
 
-### Kotlin ###
-.kotlin
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Generated files
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+gen/
+out/
+release/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Gradle
+.gradle/
+build/
 
-### VS Code ###
-.vscode/
+# Local configuration (SDK path, API keys)
+local.properties
 
-### Mac OS ###
+# IntelliJ / Android Studio
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/deploymentTargetDropDown.xml
+.idea/deploymentTargetSelector.xml
+captures/
+.navigation/
+
+# Keystores
+*.jks
+*.keystore
+
+# Native build
+.externalNativeBuild
+.cxx/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs / profiling
+*.log
+*.hprof
+
+# Kotlin
+.kotlin/
+
+# VS Code
+.vscode/

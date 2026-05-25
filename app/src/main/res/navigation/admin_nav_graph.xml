@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/adminPropertiesFragment">
+
+    <!-- Properties list -->
+    <fragment
+        android:id="@+id/adminPropertiesFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.AdminPropertiesFragment"
+        android:label="Properties">
+        <action
+            android:id="@+id/action_adminProperties_to_addProperty"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminProperties_to_adminPropertyDetail"
+            app:destination="@id/adminPropertyDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Property form (add / edit) -->
+    <fragment
+        android:id="@+id/propertyFormFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.PropertyFormFragment"
+        android:label="Property">
+        <argument
+            android:name="propertyId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <!-- Admin property detail (rooms management) -->
+    <fragment
+        android:id="@+id/adminPropertyDetailFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.AdminPropertyDetailFragment"
+        android:label="Manage Property">
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_adminPropertyDetail_to_editProperty"
+            app:destination="@id/propertyFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminPropertyDetail_to_addRoom"
+            app:destination="@id/roomFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_adminPropertyDetail_to_editRoom"
+            app:destination="@id/roomFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Room form (add / edit) -->
+    <fragment
+        android:id="@+id/roomFormFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.RoomFormFragment"
+        android:label="Room">
+        <argument
+            android:name="propertyId"
+            app:argType="string" />
+        <argument
+            android:name="roomId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <!-- Dashboard -->
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.hotel.hotelbooking.ui.admin.AdminDashboardFragment"
+        android:label="Dashboard" />
+
+    <!-- Profile tab (reuse shared fragment) -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.ProfileFragment"
+        android:label="Profile">
+        <action
+            android:id="@+id/action_profile_to_edit_profile"
+            app:destination="@id/editProfileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.hotel.hotelbooking.ui.profile.EditProfileFragment"
+        android:label="Edit Profile" />
+
+</navigation>
